@@ -5,3 +5,5 @@
 ``` bash
     brew install fish
 ```
+
+### Installation of minikube
