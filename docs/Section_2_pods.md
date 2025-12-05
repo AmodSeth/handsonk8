@@ -37,4 +37,32 @@ spec:
 
 Kubernetes starts your container, it crashes/exits, and Kubelet keeps trying to restart it, but each time it fails again, so Kubernetes backs off (waits longer and longer) before the next restart.
 
-Got this error coz the image didn't supported the same architecture.
+RCA - Got this error coz the image didn't supported the same architecture.
+
+Solution: got into the docker hub of it and found the right multi arch image and updated the pod file.
+
+
+## Exec into the pod
+Since its a single container pod we can exec into it using below command
+Note: use the Help if not sure about the command
+
+``` bash
+k exec -it <pod Name> -- Command (eg: /bin/bash)
+```
+
+```bash
+k exec -it webapp -- Date
+k exec -it webapp -- bash
+```
+
+
+## Concept of labels and Selectors
+
+![labelsAndSelectors](assets/images/labelsAndSelectors.png)
+
+**Labels** are key/value pairs that are attached to objects, such as pods. Labels are intended to be used to specify **identifying attributes** of objects that are meaningful and relevant to users.
+
+**Selectors** are used to filter a list of resources based on their labels. They allow users to **select a subset of resources** that match certain criteria.
+
+
+

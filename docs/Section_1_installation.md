@@ -6,4 +6,9 @@
     brew install fish
 ```
 
+### Add this is in bashrc
+``` bash
+    alias k = 'kubectl'
+```
+
 

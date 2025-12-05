@@ -13,5 +13,7 @@ minikube start --driver=docker
 
 ### To stop the minikube cluster
 ```bash
-minikube stop
+minikube stop 
 ```
+
+
