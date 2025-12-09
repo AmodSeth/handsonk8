@@ -2,7 +2,7 @@
 
 --> service is a long running object with long stable running port.
 
-
+```
 apiVersion: v1
 kind: Service
 metadata:
@@ -12,7 +12,7 @@ spec:
     # This defines which pods are gonna be represented by this service
     # The service becomes a endpoint to access the pods / or for other # # services to access the pods
     selector:
-        app: web#app
+        app: webapp
 
     ports:
     - name: http
@@ -23,17 +23,47 @@ spec:
 
     type: NodePort #second P is capital
 
+```
 
 
 
+## Type of services
 
-### Type of service
+* ClusterIP - **default type** - only accessible within the cluster
 
-ClusterIP - **default type** - only accessible within the cluster
-
-NodePort - accessible outside the cluster using <NodeIP>:<NodePort>
---
+* NodePort - accessible outside the cluster using **<NodeIP>:<NodePort>**
+```
     Nodeport has some conditions
     It must be greater than 30000 and less than 32767
---
+```
+
+
+
+
+
+## Excersise 1.1 - Deploying a queue service
+1. Deploy the image
+2. Port 8161 is the admin console
+3. Expose this to a browser using NodePort service 30010
+
+
+```
+# writing the pods file
+apiVersion: v1
+kind: Pod
+metadata:
+    name: fleetman-queue
+    labels:
+        app: queue
+spec:
+    containers:
+    - name: queue-container
+      image: 
+      port: 8161
+      targetPort: 8161
+
+
+    
+
+
 

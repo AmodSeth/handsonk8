@@ -9,3 +9,4 @@ Everything here is organized section-wise with simple explanations and examples.
 
 - [Section 1 — Installation](Section_1_installation.md)
 - [Section 2 — Pods](Section_2_pods.md)
+- [Section 3 — Services](Section_3_services.md)

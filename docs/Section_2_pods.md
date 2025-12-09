@@ -55,6 +55,12 @@ k exec -it webapp -- Date
 k exec -it webapp -- bash
 ```
 
+## Get the pods with labels 
+``` bash
+k get po --show-labels
+k get po -l app=webapp # -l is for label filtering
+```
+
 
 ## Concept of labels and Selectors
 

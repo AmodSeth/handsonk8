@@ -6,3 +6,6 @@
     kubectl get svc <service-name> -o yaml
 
     kubectl get pods --show-labels
+
+
+    ## change added
