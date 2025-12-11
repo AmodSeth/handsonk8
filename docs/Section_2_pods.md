@@ -61,6 +61,12 @@ k get po --show-labels
 k get po -l app=webapp # -l is for label filtering
 ```
 
+## to delete all the pods
+```
+k delete po --all
+
+```
+
 
 ## Concept of labels and Selectors
 
