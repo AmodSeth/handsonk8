@@ -38,13 +38,17 @@ nav:
   - Home: index.md
   - Minikube:
       - Overview: minikube/basic_commands.md
-      - Deployment-strategies: minikube/Deployment-strategies/
-
-  
-      
+      - Deployment Strategies: minikube/Deployment-strategies/
+  - Troubleshooting:
+      - Overview: Troubleshooting/index.md
+      - Resource Name Empty: Troubleshooting/Resource_name_can't_be_empty.md
+      - ReplicaSet Issues: Troubleshooting/Replicaset_wont_touch_me.md
+      - Pod Recovery: Troubleshooting/Why_Pod_didn't_Came_back.md
   - Section 1 - Installation: Section_1_installation.md
   - Section 2 - Pods: Section_2_pods.md
   - Section 3 - Services: Section_3_services.md
-
+  - Section 4 - ReplicaSets: Section_4_replicasets.md
+  - Section 5 - Deployments: Section_5_deployments.md
+  - Section 6 - networking: Section_6_networkandservicediscovery.md
   
 
