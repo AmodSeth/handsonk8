@@ -4,7 +4,6 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - navigation.expand
     - toc.integrate
     - content.code.copy
     - content.action.edit
@@ -37,19 +36,32 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Kubernetes Learning:
-      - Section 1 - Installation: Section_1_installation.md
-      - Section 2 - Pods: Section_2_pods.md
-      - Section 3 - Services: Section_3_services.md
-      - Section 4 - ReplicaSets: Section_4_replicasets.md
-      - Section 5 - Deployments: Section_5_deployments.md
-      - Section 6 - Networking: Section_6_networkandservicediscovery.md
+      - Overview: kubernetes-learning-index.md
+      - Sections:
+          - Section 1 - Installation: Section_1_installation.md
+          - Section 2 - Pods: Section_2_pods.md
+          - Section 3 - Services: Section_3_services.md
+          - Section 4 - ReplicaSets: Section_4_replicasets.md
+          - Section 5 - Deployments: Section_5_deployments.md
+          - Section 6 - Networking: Section_6_networkandservicediscovery.md
   - Minikube:
-      - Overview: minikube/basic_commands.md
-      - Deployment Strategies: minikube/Deployment-strategies/
+      - Overview: minikube/index.md
+      - Commands & Strategies:
+          - Basic Commands: minikube/basic_commands.md
+          - Deployment Strategies:
+              - Overview: minikube/Deployment-strategies/index.md
+              - Release Based: minikube/Deployment-strategies/Release-based.md
+  - Microservices:
+      - Overview: microservice/index.md
+      - Guides:
+          - Deploying Queue: microservice/deploying-queue.md
   - Troubleshooting:
       - Overview: Troubleshooting/index.md
-      - Resource Name Empty: Troubleshooting/Resource_name_can't_be_empty.md
-      - ReplicaSet Issues: Troubleshooting/Replicaset_wont_touch_me.md
-      - Pod Recovery: Troubleshooting/Why_Pod_didn't_Came_back.md
+      - Issues:
+          - Resource Name Empty: Troubleshooting/Resource_name_can't_be_empty.md
+          - ReplicaSet Issues: Troubleshooting/Replicaset_wont_touch_me.md
+          - Pod Recovery: Troubleshooting/Why_Pod_didn't_Came_back.md
+
+    
   
 
