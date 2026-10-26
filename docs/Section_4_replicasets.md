@@ -34,9 +34,11 @@ spec:
     
 
 ## Note 
-Pods created by ReplicaSet will have a unique suffix added to their names for identification.
+1. Pods created by ReplicaSet will have a unique suffix added to their names for identification.
 like webapp-xxxxx
-
+2. use the scale command to scale up or down
+yaml
+k scale --replicas=<number> <resource> <resource_file>
 
 ## Testing it
 1. I deleted all the pods using k delete po --all
