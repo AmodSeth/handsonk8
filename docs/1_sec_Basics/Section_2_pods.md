@@ -4,7 +4,7 @@ Pods are just the wrappers for containers
 
 Generally its always one container per pod , but genrally few times its more as a helper container like ingesting logs or metrics of the main container.
 eg:
-![Multi-container pod](assets/images/multicontainerpod.png)
+![Multi-container pod](../assets/images/multicontainerpod.png)
 
 
 
@@ -33,7 +33,7 @@ spec:
 
 
 ## Error faced  Pod status: CrashLoopBackOff
-![crashLoopBackoff](assets/images/crashLoopBackoff.png)
+![crashLoopBackoff](../assets/images/crashLoopBackoff.png)
 
 Kubernetes starts your container, it crashes/exits, and Kubelet keeps trying to restart it, but each time it fails again, so Kubernetes backs off (waits longer and longer) before the next restart.
 
@@ -70,7 +70,7 @@ k delete po --all
 
 ## Concept of labels and Selectors
 
-![labelsAndSelectors](assets/images/labelsAndSelectors.png)
+![labelsAndSelectors](../assets/images/labelsAndSelectors.png)
 
 **Labels** are key/value pairs that are attached to objects, such as pods. Labels are intended to be used to specify **identifying attributes** of objects that are meaningful and relevant to users.
 

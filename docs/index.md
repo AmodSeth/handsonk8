@@ -12,9 +12,5 @@ Study Time: 7-10 hrs/week
 
 ## 📘 Sections
 
-- [Section 1 — Installation](Section_1_installation.md)
-- [Section 2 — Pods](Section_2_pods.md)
-- [Section 3 — Services](Section_3_services.md)
-- [Section 4 — ReplicaSets](Section_4_replicasets.md)
-- [Section 5 — Deployments](Section_5_deployments.md)
-- [Section 6 - networking](Section_6_networkandservicediscovery.md)
+- [Section 1 — Basics](1_sec_Basics/1_index.md)
+- [Section 2 - Scheduling](2_sec_scheduling/1_index.md)

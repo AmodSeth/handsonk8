@@ -45,4 +45,4 @@ k scale --replicas=<number> <resource> <resource_file>
 2. It swapped to 0/1 pods
 3. It spawned the new pods with new suffix within seconds
 
-![rs-pod](assets/images/replicasetspawing.png)
+![rs-pod](../assets/images/replicasetspawing.png)
